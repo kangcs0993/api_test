@@ -1,0 +1,21 @@
+package util;
+
+public class Common {
+	public static final String VIEW_PATH = "/WEB-INF/views/";
+	
+	public static class Users{
+		public String userPath(String path) {
+			return VIEW_PATH + "users/" + path + ".jsp";
+		}
+	}
+	
+	public static class Movies{
+		public String moviePath(String path) {
+			return VIEW_PATH + "movies/" + path + ".jsp";
+		}
+	}
+	
+	public static class MainPath{
+		publi
+	}
+}

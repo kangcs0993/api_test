@@ -1,0 +1,11 @@
+package dao;
+
+import org.apache.ibatis.session.SqlSession;
+
+public class UserDAO {
+	SqlSession sqls;
+	
+	public List<UserVO> selectAll(){
+		return sqls.selectList("u.user_list");
+	}
+}

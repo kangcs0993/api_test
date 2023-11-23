@@ -1,0 +1,25 @@
+package com.api.test;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import dao.UserDAO;
+import util.Common;
+
+@Controller
+public class MainController {
+	UserDAO udao;
+	
+	public MainController(UserDAO udao) {
+		this.udao = udao;
+	}
+
+	@RequestMapping("/")
+	public String main(Model model) {
+		
+		
+		
+		return Common.MainPath.mainPath("main");
+	}
+}
